@@ -1,7 +1,8 @@
 # Bài tập Java OOP - PTIT
+
+
 Bài tập được làm trên phần mềm IntelliJ IDEA
 
-----
 ## Bài tập hướng đối tượng cơ bản
 ### Rectangle
 [Source code](https://github.com/Thang58787/java_oop_ptit/tree/main/rectangle/src) 
