@@ -5,7 +5,7 @@ public class Main {
         // Enter a, b, c in the quadratic equation: ax^2 + bx + c
         Scanner scanner = new Scanner(System.in);
 
-        System.out.printf("Giải phương trình bậc hai ax^2 + bx + c");
+        System.out.printf("Giải phương trình bậc hai ax^2 + bx + c\n");
         System.out.printf("a = ");
         double a = scanner.nextDouble();
         System.out.printf("b = ");

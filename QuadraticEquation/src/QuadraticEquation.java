@@ -8,7 +8,7 @@ public class QuadraticEquation {
 
     // Format số double cho đẹp hơn
     // Loại bỏ tất cả chữ số 0 ở phần thập phân, chuyển về kiểu String
-    // VD: 3.400000 -> "3.4"
+    // VD: fm.format(3.400000) -> "3.4"
     DecimalFormat fm = new DecimalFormat("0.#");
 
     // Constructors
@@ -53,24 +53,21 @@ public class QuadraticEquation {
         return (b * b) - (4 * a * c);
     }
 
-    public void getRoots() {
+    public void solveEquation() {
         double delta = getDelta();
 
         if (delta < 0) {
+            System.out.printf("Delta: %s\n", fm.format(delta));
             System.out.println("Phương trình vô nghiệm");
         } else if (delta == 0) {
             double x = -b/(2*a);
+            System.out.printf("Delta: %s\n", fm.format(delta));
             System.out.printf("Phương trình có nghiệm kép: %s", x);
         } else {
             double x1 = (-b + Math.sqrt(delta)) / (2 * a);
             double x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            System.out.printf("Delta: %s\n", fm.format(delta));
             System.out.printf("Phương trình có hai nghiệm phân biệt: x1 = %s, x2 = %s", fm.format(x1), fm.format(x2));
         }
-    }
-
-    public void solveEquation() {
-        double delta = getDelta();
-        System.out.printf("Delta: %s\n", fm.format(delta));
-        getRoots();
     }
 }
