@@ -1,4 +1,6 @@
 public class Cat extends Animal {
+    private int name;
+
     public void run() {
         System.out.println("Cat is running");
     }
