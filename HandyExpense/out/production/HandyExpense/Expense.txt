@@ -1,0 +1,5 @@
+5-May-2023, 40.0, flowers
+5-May-2034, 20.0, books
+6-May-2023, 50.0, fuel
+6-Mar-2023, 10.0, Drinks
+8-Mar-2023, 40.0, pens

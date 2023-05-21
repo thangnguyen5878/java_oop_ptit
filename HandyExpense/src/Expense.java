@@ -4,7 +4,7 @@ public class Expense {
     private double amount;
     private String content;
 
-    int nextId = 1;
+    static int nextId = 1;
 
     public Expense(String date, double amount, String content) {
         this.id = nextId++;

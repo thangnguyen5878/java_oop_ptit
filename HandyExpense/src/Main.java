@@ -14,40 +14,25 @@ public class Main {
             System.out.println("1. Add an expense");
             System.out.println("2. View all expenses");
             System.out.println("3. Delete an expense");
-            System.out.println("4. Quit");
+            System.out.println("4. Save");
+            System.out.println("5. Quit");
 
             int choice = scanner.nextInt();
             switch (choice) {
                 // 1. Add an expense
-                case 1 -> {
-                    // id, date, amount, content
-                    scanner.nextLine();
-                    System.out.println("New expense");
-                    System.out.println("Date (dd-MMM-yyyy): ");
-                    String date = scanner.nextLine();
-
-                    System.out.println("Amount: ");
-                    double amount = scanner.nextDouble();
-                    scanner.nextLine();
-
-                    System.out.println("Content: ");
-                    String content = scanner.nextLine();
-
-                    expenseManager.addExpense(date, amount, content);
-                    scanner.nextLine();
-                }
+                case 1 -> expenseManager.addExpense();
                 // 2. View all expenses
                 case 2 -> expenseManager.viewExpenses();
                 // 3. Delete an expense
-                case 3 -> {
-                    System.out.println("Enter espense ID to delete: ");
-                    int expenseId = scanner.nextInt();
-                    expenseManager.deleteExpense(expenseId);
-                    System.out.println();
+                case 3 -> expenseManager.deleteExpense();
+                // 4. Save
+                case 4 -> {
+                    expenseManager.writeExpenses();
+                    System.out.println("Saved!");
                     scanner.nextLine();
                 }
-                // 4. Quit program
-                case 4 -> exit(0);
+                // 5. Exit
+                case 5 -> exit(0);
             }
         }
     }
