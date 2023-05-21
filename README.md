@@ -40,3 +40,46 @@ Yêu cầu 2: Xây dựng lớp *QLCB* (quản lý cán bộ) cài đặt các p
 - Tìm kiếm theo họ tên.
 - Hiện thị thông tin về danh sách các cán bộ.
 - Thoát khỏi chương trình.
+### Handy Expense
+[Source code](https://github.com/thangnguyen5878/java_oop_ptit/tree/main/HandyExpense/src)
+
+Write a program to manage expenses, named Handy expense.
+
+Display the menu:
+
+Handy Expense
+
+1. Add an expense
+2. Display all expenses
+3. Delete an expense
+4. Save
+5. Quit
+
+Your choice:
+
+1. If user chooses 1, let him/her add expenses. Each expense include ID(int), date(String), amount(double), content(String). Whereas, expense ID is increase automatically(i.e new expense has ID equal to last expense ID + 1), the first expense has ID: 1. The date field is entered in “dd-MMM-yyyy” format.
+
+2. If user chooses 2, the program needs to display list of expenses that were entered in 1st step. The list should be shown as the format below(the following data is just dummy):
+
+| ID  | Date        | Amount | Content     |
+| --- | ----------- | ------ | ----------- |
+| 1   | 11-Apr-2009 | 100    | Tuition fee |
+| 2   | 20-Apr-2009 | 250    | Rent house  |
+| 3   | 30-Apr-2009 | 200    | Food        |
+
+Total: 550
+
+3. If user chooses 3, the program requires him/her enter the ID for delete, if no expense has ID as given, display a message: “No expense found”.
+4. If user chooses 4, save the data.
+5. If user chooses 5, quit the program.
+
+The data is saved in Expense.txt in the following format:
+
+```
+5-May-2023, 40.0, flowers
+5-May-2034, 20.0, books
+6-May-2023, 50.0, fuel
+6-Mar-2023, 10.0, Drinks
+8-Mar-2023, 40.0, pens
+```
+
